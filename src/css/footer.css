@@ -1,0 +1,14 @@
+footer{
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    background: black;
+    align-items: center;
+}
+.areafooter{
+    width: 33%;
+    height: 100%;
+}
+footer hr{
+    height: 80%;
+}
