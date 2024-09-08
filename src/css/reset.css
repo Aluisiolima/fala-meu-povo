@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     text-transform: capitalize;
+    list-style: none;
+    text-decoration: none;
+    
 }
 body{
     background: #AAD1D9;

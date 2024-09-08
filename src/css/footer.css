@@ -1,13 +1,25 @@
 footer{
     display: flex;
-    height: 30vh;
+    
+    height: 20vh;
     width: 100%;
     background: black;
     align-items: center;
+    position: fixed;
+    bottom: 0;
 }
 .areafooter{
     width: 33%;
     height: 100%;
+    color: white;
+    font-size: 10px;
+    /* padding: 1%; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.areafooter ul li{
+    margin: 1em;
 }
 footer hr{
     height: 80%;
