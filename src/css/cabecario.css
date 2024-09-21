@@ -10,15 +10,15 @@
 }
 .logo{
     height: 100%;
-    width: 20%;
+    width: auto;
 }
 .logo img{
-    max-width: 100%;
-    max-width: 100%;
+    max-width: 4em;
+    max-width: 4em;
 }
 .name-title{
     height: 100%;
-    width: 60%;
+    width: auto;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -29,10 +29,12 @@
     font-size: 1.5em;
 }
 .menu{
-    height: 100%;
-    width: 20%;
+    height: auto;
+    width: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
     align-items: center;
 }
 .menu i {

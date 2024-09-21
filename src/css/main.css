@@ -20,25 +20,34 @@
     width: 90%;
     margin: 1em;
     display: flex;
+    flex-direction: column;
+}
+.caixa_de_texto{
+    max-width: 100%;
+    max-height: auto;
+    display: flex;
 }
 .card-msg  {
     width: 100%;
     background: #D9D9D9;
-    padding: 1em;
+    padding: .5em;
     display: flex;
+    flex-direction: column;
     border-radius:0 1em  1em 1em ;
     font-family: "JetBrains Mono";
 }
-.card-msg img{
-    margin: .5em;
-    max-height: 15vh;
+.msg-img img{
+    margin:0 0 .2em .8em;
+    max-height: 20em;
+    max-width: 20em;
+
 }
 .voto{
     display: flex;
     justify-content: end;
-    flex-direction: column;
+
 }
-.voto span{
+.voto button{
  margin-top: .25em;
 }
 .ponta{
