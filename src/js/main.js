@@ -1,8 +1,9 @@
-function enviarProspota(){
-    window.location.href = "./pages/tela2.html";
-}
+const nav = document.getElementById('nav.componentes');
 
-async function buscarComponentes(componente) {
+
+
+async function buscarComponentes(componente,localComponents) {
+    
     try {
         const response = await fetch(`./components/${componente}.html`);
         if (!response.ok) {
@@ -10,14 +11,25 @@ async function buscarComponentes(componente) {
             return "NOT found componente";
         }
         const data = await response.text();
-        return data;
+        localComponents.innerHTML = data;
+
     } catch (error) {
         console.error("Error fetching componente:", error);
         return "Error fetching componente";
     }
 }
 
-const nav = document.getElementById('nav.componentes');
-buscarComponentes("nav").then(data => {
-    nav.innerHTML = data;
-});
+
+
+
+
+//funcao idiota so pra apaga mesmo jaja vai embora 
+function enviarProspota(){
+    window.location.href = "./pages/tela2.html";
+}
+function geradorDeTela(telas){
+    for (let chaves in telas) {
+        buscarComponentes(`${chaves}` ,telas[chaves])
+    }
+}
+geradorDeTela(pages)
